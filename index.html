@@ -45,6 +45,14 @@ body {
     <h1>Weather & CO₂ Trends</h1>
   </div>
 
+<script>
+fetch("HW06.md")
+  .then(res => res.text())
+  .then(text => {
+    document.getElementById("content").innerHTML =
+      "<pre style='white-space: pre-wrap; font-size: 18px;'>" + text + "</pre>";
+  });
+</script>
 
 </body>
 </html>
