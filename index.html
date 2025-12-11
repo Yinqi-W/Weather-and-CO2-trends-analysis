@@ -7,12 +7,42 @@
   body { margin: 0; font-family: Arial, sans-serif; }
 
 .hero {
-  background-color: #56ccf2;
-  background-image: url("https://www.transparenttextures.com/patterns/clouds.png"); 
+  position: relative;
+  overflow: hidden;
+  height: 260px;
   color: white;
   text-align: center;
-  padding: 120px 20px;
+  padding-top: 120px;
+  background: #78d5f5; /* 天空底色 */
 }
+
+/* 动态云层 */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300%;
+  height: 100%;
+  background-image: url("https://www.transparenttextures.com/patterns/clouds.png");
+  opacity: 0.6; /* 云朵透明度 */
+  animation: cloudMove 60s linear infinite;
+}
+
+/* 云朵移动动画 */
+@keyframes cloudMove {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-33.3%); }
+}
+
+.hero h1 {
+  position: relative;
+  z-index: 2; /* 让标题覆盖在云朵上 */
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+}
+
 
   .hero h1 {
     font-size: 48px;
