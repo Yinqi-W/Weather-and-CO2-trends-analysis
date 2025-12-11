@@ -25,23 +25,25 @@
   width: 300%;
   height: 100%;
   background-image: url("https://www.transparenttextures.com/patterns/clouds.png");
-  opacity: 5; /* 云朵透明度 */
-  animation: cloudMove 60s linear infinite;
+  background-size: 400px 400px;  /* 把云放大一点 */
+  opacity: 1;                    /* 云完全不透明，更明显 */
+  animation: cloudMove 20s linear infinite;  /* 20 秒滑一遍，更容易看到在动 */
 }
 
 /* 云朵移动动画 */
 @keyframes cloudMove {
-  0% { transform: translateX(0); }
+  0%   { transform: translateX(0); }
   100% { transform: translateX(-33.3%); }
 }
 
 .hero h1 {
   position: relative;
-  z-index: 2; /* 让标题覆盖在云朵上 */
+  z-index: 2;   /* 让标题在云朵上面 */
   font-size: 48px;
   font-weight: 700;
   margin: 0;
 }
+
 
 
   .hero h1 {
