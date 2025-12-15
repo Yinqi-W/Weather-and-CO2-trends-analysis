@@ -7,11 +7,10 @@ Yinqi Wang & Uli Rodriguez
 ## Colab Worksheet:
 [Weather comparison](https://colab.research.google.com/drive/1O-u9OOeQtptSKskyn02cy59KTx5dOGLS)
 
+## Hypothesis: 
+Since Rome is close to the Mediterranean Sea, it is warmer than Chicago, and the lower temperature city has more precipitation.
 
-<h2 style="color:#1A5276;"> Introduction: </h2>
-We want to compare the weather (including the temperature and the number of rainy days) and CO2 trends of two cities located at the same latitude. So we chose Rome and Chicago. Both of them are roughly at the same latitude of 41°N. Through NOAA, I obtained the temperature and precipitation data for Chicago from 2025-1-1 to 2025-7-1, and through Visualcrossing I got the temperature and precipitation for Rome. Our hypothesis is: Since Rome is close to the Mediterranean Sea, it is warmer than Chicago, and the lower temperature city has more precipitation.
-
-<h2 style="color:#1A5276;"> Result: </h2>
+## Result: 
 
 ### Weather Trends:
 
@@ -43,7 +42,7 @@ To compare CO₂ with temperature, I synchronized CO₂ data from Jan–Jul 2025
 This demonstrates that short-term CO₂ fluctuations do not directly control daily or weekly weather. Temperature in Chicago and Rome is dominated by local geographical factors (continental climate vs Mediterranean climate), air masses, and seasonal patterns. CO₂ affects climate on long time scales (decades) rather than short-term weather.
 
 
-<h2 style="color:#1A5276;"> Conclusion: </h2>
+## Conclusion:
 
 Because of the Mediterranean climate, temperature and precipitation in Rome is higher than Chicago in winter and spring. However, after entering the summer, Rome becomes much drier while Chicago experiences increasing rainfall. We can expand the time range to multiple years to observe long-term patterns in the future.
 
